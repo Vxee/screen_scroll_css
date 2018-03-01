@@ -1,0 +1,48 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>全屏图片视差滚动切换代码</title>
+
+<style>
+* { padding: 0; margin: 0 }
+body { text-align: center; /*background-attachment:fixed;*/ width: 100%; }
+#main { width: 100%; margin: auto }
+/*.header{
+                background:#fff;
+                
+            }*/
+.header { width: 100%; height: 1080px; overflow: hidden; position: relative; background: url("a1.png") center center no-repeat; background-attachment: fixed; background-size: cover; }
+.header2 { background: url("a3.png") center center no-repeat; background-attachment: fixed; background-size: cover; }
+.text { position: absolute; top: 30%; left: 300px; }
+.text p { font-size: 30px; font-family: "微软雅黑"; color: #fff; }
+.bg-attachment { background: url("a2.png") center center no-repeat; background-attachment: fixed; background-size: cover; }
+.bg-attachment .shadow { width: 100%; height: 1080px; overflow: hidden; margin: auto; }
+.div2 { background: url("a4.png") center center no-repeat; background-attachment: fixed; background-size: cover; }
+</style>
+
+</head>
+<body>
+
+<div id="main">
+  <div class="header"> 
+    <!-- <img src="Panamera.jpg"> -->
+    <div class="text">
+      <p>全新工艺</p>
+    </div>
+  </div>
+  <div class="bg-attachment">
+    <div class="shadow">  </div>
+  </div>
+  <div class="header header2"> 
+    <!-- <img src="xe.jpg"> -->
+    <div class="text">
+      <p>争我所争 弃我所废</p>
+    </div>
+  </div>
+  <div class="bg-attachment div2">
+    <div class="shadow" style="text-align: left;"> <img src="a4.png" style="width: 30%;margin-top: 15%; margin-left: 200px;"> </div>
+  </div>
+</div>
+</body>
+</html>
